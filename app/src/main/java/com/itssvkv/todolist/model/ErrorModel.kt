@@ -1,0 +1,1 @@
+package com.itssvkv.todolist.modeldata class ErrorModel(    val errors: List<String>)

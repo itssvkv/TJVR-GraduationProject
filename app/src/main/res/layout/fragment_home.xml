@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ui.homescreen.HomeFragment">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileIv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginVertical="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/profileImg" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/profileIv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/title_home"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/profileIv"
+        app:layout_constraintTop_toBottomOf="@+id/nameTv" />
+
+    <!--        340
+            android:layout_marginHorizontal="20dp"
+
+    -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/middleIv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/home_mid_tv"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        app:shapeAppearanceOverlay="@style/profileImg" />
+
+    <TextView
+        android:id="@+id/onPhotoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/check_knee_test_result"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/middleIv"
+        app:layout_constraintStart_toStartOf="@+id/middleIv"
+        app:layout_constraintTop_toTopOf="@+id/middleIv" />
+
+    <ImageView
+        android:id="@+id/cameraOnPhotoIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/poppins_medium"
+        android:src="@drawable/camera"
+        android:text="@string/check_knee_test_result"
+        app:layout_constraintEnd_toEndOf="@+id/middleIv"
+        app:layout_constraintStart_toStartOf="@+id/middleIv"
+        app:layout_constraintTop_toBottomOf="@+id/onPhotoTv" />
+
+    <ProgressBar
+        android:id="@+id/intentProgressBar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true"
+        android:layout_marginTop="40dp"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintEnd_toEndOf="@+id/middleIv"
+        app:layout_constraintStart_toStartOf="@+id/middleIv"
+        app:layout_constraintTop_toBottomOf="@+id/onPhotoTv" />
+
+    <TextView
+        android:id="@+id/onPhotoTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/please_insert_x_ray_picture"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/middleIv"
+        app:layout_constraintStart_toStartOf="@+id/middleIv"
+        app:layout_constraintTop_toBottomOf="@+id/cameraOnPhotoIv" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/middleIv"
+        app:layout_constraintEnd_toEndOf="@+id/middleIv"
+        app:layout_constraintStart_toStartOf="@+id/middleIv">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkResultButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cv_button_shadow"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/check_result"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_atop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/symptomsTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleIv"
+        android:layout_marginTop="55dp"
+        android:text="@string/symptoms_of_knee_pain"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsTitleTv"
+        android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/knee1Iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/knee1"/>
+
+
+        <TextView
+            android:id="@+id/knee1Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/knee1Iv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/swelling_and_stiffness"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/knee2Iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/knee2Tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/knee2"/>
+
+
+        <TextView
+            android:id="@+id/knee2Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/redness_and_warmth_to_the_touch"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/knee3Iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/knee1Iv"
+            android:src="@drawable/knee3"/>
+
+
+        <TextView
+            android:id="@+id/knee3Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toEndOf="@+id/knee3Iv"
+            app:layout_constraintTop_toBottomOf="@+id/knee1Tv"
+            android:text="@string/weakness_in_the_area"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/knee4Iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/knee4Tv"
+            app:layout_constraintTop_toBottomOf="@+id/knee2Iv"
+            android:src="@drawable/knee4"/>
+
+
+        <TextView
+            android:id="@+id/knee4Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/knee2Tv"
+            android:text="@string/bang_loudly"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/knee5Iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/knee5Tv"
+            app:layout_constraintTop_toBottomOf="@+id/knee4Iv"
+            android:src="@drawable/knee5"/>
+
+
+        <TextView
+            android:id="@+id/knee5Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/knee4Iv"
+            android:text="@string/inability_to_fully_straighten_the_knee"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

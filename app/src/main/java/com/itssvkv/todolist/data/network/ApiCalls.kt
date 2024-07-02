@@ -1,0 +1,1 @@
+package com.itssvkv.todolist.data.networkimport android.graphics.Bitmapimport retrofit2.http.GETimport retrofit2.http.Queryinterface ApiCalls {    @GET("curated")    suspend fun getAllPhotos(        @Query("page") page: Int    ): Bitmap}

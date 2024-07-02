@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">TJVR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_on_boarding_title">Use our program to relieve \nknee joint pain</string>
+    <string name="first_on_boarding_dis">Start getting tested today for very fast pain \nrelief.</string>
+    <string name="sec_on_boarding_title">Check up and know what \nis your knee’s status</string>
+    <string name="sec_on_boarding_dis">Worry no more about what is your medicine. \ncheck with your device and take the treatment.</string>
+    <string name="third_on_boarding_title">You can see the exercises \nusing(VR)</string>
+    <string name="third_on_boarding_dis">Have fun with this experience..</string>
+    <string name="continue_tv">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="your_name">Your name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="your_email">Your E-mail</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="re_enter_your_password">Re-enter your password</string>
+    <string name="login">login</string>
+    <string name="or">or</string>
+    <string name="remember_me">Remember me</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have account</string>
+    <string name="title_home">Let\'s help diagnose your knee</string>
+    <string name="check_knee_test_result">Check Knee test result</string>
+    <string name="please_insert_x_ray_picture">Please insert X-ray picture</string>
+    <string name="check_result">Check result</string>
+    <string name="image_uploaded">Image uploaded successful</string>
+    <string name="please_click_check_result">Please click check result</string>
+    <string name="profile_view">Profile view</string>
+    <string name="address">Address</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="username">Username</string>
+    <string name="confirm">Confirm</string>
+    <string name="about_you">About you</string>
+    <string name="update_profile">Update profile</string>
+    <string name="symptoms_of_knee_pain">Symptoms of knee pain</string>
+    <string name="swelling_and_stiffness">Swelling and \nstiffness.</string>
+    <string name="redness_and_warmth_to_the_touch">Redness and \nwarmth to the \ntouch.</string>
+    <string name="weakness_in_the_area">Weakness in \nthe area.</string>
+    <string name="bang_loudly">Bang loudly.</string>
+    <string name="inability_to_fully_straighten_the_knee">Inability to fully \nstraighten the \nknee.</string>
+    <string name="profile">Profile</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="diagnosis2">Diagnosis:</string>
+    <string name="results">Results</string>
+    <string name="exercise">Exercise:</string>
+    <string name="weight_management">Weight Management:</string>
+    <string name="physical_therapy">Physical Therapy:</string>
+    <string name="pain_relief">Pain Relief:</string>
+    <string name="first_exercise">1.%1$s</string>
+    <string name="first_repetitions">Repetitions: %1$s</string>
+    <string name="first_exercise_link">Exercise: %1$s</string>
+
+    <string name="sec_exercise">2.%1$s</string>
+    <string name="sec_hold">Hold: %1$s</string>
+    <string name="sec_exercise_link">Exercise: %1$s</string>
+    <string name="save">save</string>
+
+
+
+
+
+</resources>

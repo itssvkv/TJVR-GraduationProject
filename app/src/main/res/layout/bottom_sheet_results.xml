@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView
+        android:id="@+id/headOfBottomSheetIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/head_of_bottom_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/headerTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:layout_marginTop="10dp"
+        android:text="@string/results"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headOfBottomSheetIv" />
+
+    <ImageView
+        android:id="@+id/cancelIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/firstTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/diagnosis2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTitleTv" />
+
+    <TextView
+        android:id="@+id/firstDiscTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="1dp"
+        app:layout_constrainedWidth="true"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/firstTitleTv"
+        app:layout_constraintTop_toBottomOf="@id/headerTitleTv"
+        tools:text="gjlkgkljgljkllkgljgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkgjlkgkljgljkllkgljkgljkkgljk"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/secTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        app:layout_constrainedWidth="true"
+        android:text="@string/exercise"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDiscTv" />
+
+    <TextView
+        android:id="@+id/secDiscTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/secTitleTv"
+        app:layout_constraintTop_toBottomOf="@id/firstDiscTv"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        app:layout_constrainedWidth="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:padding="1dp"
+        tools:text="gjlkgkljgljkllkgljkgljk"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/thirdTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/weight_management"
+        android:textColor="@color/black"
+        app:layout_constrainedWidth="true"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secDiscTv" />
+
+    <TextView
+        android:id="@+id/thirdDiscTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="1dp"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toEndOf="@id/thirdTitleTv"
+        app:layout_constraintTop_toBottomOf="@id/secDiscTv"
+        tools:text="gjlkgkljgljkllkgljkgljk"
+        tools:ignore="SmallSp" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/fourthTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/physical_therapy"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdDiscTv" />
+
+    <TextView
+        android:id="@+id/fourthDiscTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/fourthTitleTv"
+        app:layout_constraintTop_toBottomOf="@id/thirdDiscTv"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:textSize="10sp"
+        app:layout_constrainedWidth="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:padding="1dp"
+        tools:text="gjlkgkljgljkllkgljkgljk"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/fiveTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/pain_relief"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthDiscTv" />
+
+    <TextView
+        android:id="@+id/fiveDiscTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/fiveTitleTv"
+        app:layout_constraintTop_toBottomOf="@id/fourthDiscTv"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:textSize="10sp"
+        app:layout_constrainedWidth="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:padding="1dp"
+        tools:text="gjlkgkljgljkllkgljkgljk"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/firstExerciseTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/first_exercise"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiveDiscTv" />
+
+    <TextView
+        android:id="@+id/firstExerciseLinkTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/first_exercise_link"
+        android:layout_marginStart="20dp"
+        android:textColor="#2B64E3"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstExerciseTv" />
+
+    <TextView
+        android:id="@+id/firstRepetitionsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/first_repetitions"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstExerciseLinkTv" />
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/secExerciseTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/sec_exercise"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstRepetitionsTv" />
+
+    <TextView
+        android:id="@+id/secExerciseLinkTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/sec_exercise_link"
+        android:layout_marginStart="20dp"
+        android:textColor="#2B64E3"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secExerciseTv" />
+
+    <TextView
+        android:id="@+id/secRepetitionsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/sec_hold"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secExerciseLinkTv" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secRepetitionsTv">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_atop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
